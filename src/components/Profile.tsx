@@ -4,21 +4,21 @@ import Link from 'next/link';
 
 export default function Profile() {
   return (
-    <section className="flex flex-col items-center m-5">
+    <section className="text-center">
       <Image
         src={profileImg}
         alt="profile"
-        height={200}
-        className="rounded-full aspect-square	object-cover"
+        height={220}
+        className="mx-auto rounded-full aspect-square	object-cover"
+        priority
       />
-      <p className=" text-xl font-bold">Hi I&apos;m dongree</p>
-      <p className="font-semibold">Front-end Developer</p>
+      <h2 className=" text-xl font-bold mt-2">Hi I&apos;m dongree</h2>
+      <h3 className="font-semibold">Front-end Developer</h3>
       <p>꾸준함을 추구하는 dongree</p>
-      <Link
-        href="/contact"
-        className="bg-yellow-500 px-5 py-1 rounded-2xl font-bold"
-      >
-        Contact Me
+      <Link href="/contact">
+        <button className="bg-yellow-500 px-5 py-1 rounded-2xl font-bold mt-2">
+          Contact Me
+        </button>
       </Link>
     </section>
   );
