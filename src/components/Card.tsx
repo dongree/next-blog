@@ -12,7 +12,7 @@ export default function Card({
 }: Props) {
   return (
     <Link href={`/posts/${path}`}>
-      <article className="rounded-md shadow-lg">
+      <article className="rounded-md shadow-md hover:shadow-xl">
         <Image
           src={`/img/${path}.png`}
           alt={title}
@@ -21,7 +21,7 @@ export default function Card({
           className="w-full "
         />
         <div className="flex flex-col items-center p-3">
-          <time className="self-end">{date.toString()}</time>
+          <time className="self-end text-gray-500">{date.toString()}</time>
           <h3 className="font-bold">{title}</h3>
           <p className="w-full truncate text-center">{description}</p>
           <span className=" bg-green-200 bg-opacity-80	px-2 text-sm">
