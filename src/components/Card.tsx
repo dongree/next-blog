@@ -23,7 +23,7 @@ export default function Card({
         <div className="flex flex-col items-center p-3">
           <time className="self-end">{date.toString()}</time>
           <h3 className="font-bold">{title}</h3>
-          <p className="w-full truncate">{description}</p>
+          <p className="w-full truncate text-center">{description}</p>
           <span className=" bg-green-200 bg-opacity-80	px-2 text-sm">
             {category}
           </span>
