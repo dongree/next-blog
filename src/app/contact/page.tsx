@@ -7,6 +7,11 @@ const LINKS = [
   { icon: <AiFillYoutube />, url: '' },
 ];
 
+export const metadata = {
+  title: 'Contact Me',
+  description: 'Dongree의 Contact 페이지입니다.',
+};
+
 export default function ContactPage() {
   return (
     <section className="flex flex-col items-center my-2">

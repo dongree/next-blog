@@ -1,8 +1,13 @@
 import Profile from '@/components/Profile';
 
-export default function AboutPage() {
-  const TITLE_CLASS = 'font-bold text-xl my-1';
+export const metadata = {
+  title: 'About Me',
+  description: 'Dongree의 About 페이지입니다.',
+};
 
+const TITLE_CLASS = 'font-bold text-xl my-1';
+
+export default function AboutPage() {
   return (
     <section>
       <Profile />
